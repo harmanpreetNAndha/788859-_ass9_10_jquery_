@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+
+<head>
+
+    <title>Hall booking app - sign up</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/themesconf-room1.min.css" rel="stylesheet" />
+    <link href="css/themesjquery.mobile.icons.min.css" rel="stylesheet" />
+    <link href="../../lib/jqm/1.4.4/jquery.mobile.structure-1.4.4.min.css" rel="stylesheet" />
+    <link href="css/app.css" rel="stylesheet" />
+    <script src="../../lib/jquery/2.1.1/jquery-2.1.1.min.js"></script>
+    <script src="../../lib/jqm/1.4.4/jquery.mobile-1.4.4.min.js"></script>
+
+</head>
+
+<body>
+<div data-role="page">
+    <div data-role="header" data-theme="c">
+        <h1>book it</h1>
+    </div>
+    <div role="main" class="ui-content">
+        <h3>sign up</h3>
+        <label for="txt-first-name">first name</label>
+        <input type="text" name="txt-first-name" id="txt-first-name" value="">
+        <label for="txt-last-name">last name</label>
+        <input type="text" name="txt-last-name" id="txt-last-name" value="">
+        <label for="txt-email">email address</label>
+        <input type="text" name="txt-email" id="txt-email" value="">
+        <label for="txt-password">password</label>
+        <input type="password" name="txt-password" id="txt-password" value="">
+        <label for="txt-password-confirm">confirm password</label>
+        <input type="password" name="txt-password-confirm" id="txt-password-confirm" value="">
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday">
+        <label for="cars">Choose a city:</label>
+        <select name="city" id="city">
+            <option value="volvo">Brampton</option>
+            <option value="saab">Montreal</option>
+            <option value="opel">Surry</option>
+            <option value="audi">Winnipeg</option>
+          </select>
+
+        </select>  
+
+        <a href="#dlg-sign-up-sent" data-rel="popup" data-transition="pop" data-position-to="window" id="btn-submit" class="ui-btn ui-btn-b ui-corner-all  ui-shadow ui-btn-b mc-top-margin-1-5">submit</a>
+        <div data-role="popup" id="dlg-sign-up-sent" data-dismissible="false" style="max-width:400px;">
+            <div data-role="header">
+               
+            </div>
+            <div role="main" class="ui-content">
+                <h3>confirm your email-address,check your inbox.</h3>
+               
+                <div class="mc-text-center"><a href="sign-in.html" class="ui-btn ui-corner-all ui-shadow ui-btn-b mc-top-margin-1-5">ok</a></div>
+
+            </div>
+        </div>
+    </div><!-- /content -->
+</div><!-- /page -->
+
+</body>
+</html>
